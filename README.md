@@ -11,5 +11,8 @@ Lihat File [LICENSE_Intel](LICENSE_Intel) untuk informasi lengkap.
 **MIT License**
 File yang saya buat dan modifikasi sendiri  Lihat File .[LICENSE](LICENSE) untuk informasi lengkap.
 
-
+## CARA PENGGUNAAN
+- Buka file .[ABSEN](ABSEN)
+- Clone / Copy semua file && direktori
+- Install semua yang ada di file .[requirements.txt](requirements.txt)
 
