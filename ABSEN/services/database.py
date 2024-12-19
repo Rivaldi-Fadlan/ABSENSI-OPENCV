@@ -11,7 +11,7 @@ databases= mysql.connector.connect( #navigasi ke  sistem database
 
 def absen (NAMA,ABSEN):
     cursor = databases.cursor()
-    insert = cursor.execute("INSERT INTO ABSEN_JANUARI (NAMA,ABSEN) VALUES (%s,%s)",(NAMA,ABSEN)) #tulis query
+    insert = cursor.execute("INSERT INTO your_table_name (NAMA,ABSEN) VALUES (%s,%s)",(NAMA,ABSEN)) #tulis query
     databases.commit() #meminta inputan untuk dimasukkan ke dala query
     return insert #kembalikan nilai insert
 
