@@ -8,7 +8,7 @@ import numpy as np
 recognizer = cv2.face.LBPHFaceRecognizer_create()
 face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_frontalface_default.xml") #mengimpor file model
 
-dataset_path = "/home/fadlann/LINUX/vscode/PYTHONN/opencv/data" #memasukkan path file yang akan dituju
+dataset_path = "/path/to/data" #memasukkan path file yang akan dituju
 
 def get_images(dataset_path): #fungsi untuk memproses data
     face_samples = [] #array kosong untuk menampung data
@@ -24,4 +24,4 @@ def get_images(dataset_path): #fungsi untuk memproses data
 faces = get_images("data") #panggil fungsi
 labels = np.arange(len(faces)) #label untuk menghitung panjang data face
 recognizer.train(faces, labels) #membuat file baru 
-recognizer.save("/home/fadlann/LINUX/vscode/PYTHONN/opencv/data/traine.xml") #membuat file tujuan 
+recognizer.save("/path/to/data/traine.xml") #membuat file tujuan 
