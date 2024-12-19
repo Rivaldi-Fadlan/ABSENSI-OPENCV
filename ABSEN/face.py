@@ -6,7 +6,7 @@ from services import database #import database file
 
 recognizer = cv2.face.LBPHFaceRecognizer_create() #fungsi untuk membuat alat pencocokan
 try:
-    recognizer.read("/home/fadlann/LINUX/vscode/PYTHONN/ABSEN/data/traine.xml") #membaca path dataset
+    recognizer.read("/path/to/traine.xml") #membaca path dataset
     print("FACE RECOGNITION ON \U0001F923\U0001F923\U0001F923") #pesan jika kamera mendeteksi
 except cv2.error as e:
     print(f"KAMERA TIDAK DAPAT MENDETEKSI : {e}") #pesan jika kamera tida mendeteksi
@@ -33,9 +33,9 @@ while True:
         try:
             label, kemiripan = recognizer.predict(face_img)#memprediksi kemiripan dataset dengan gambar di kamera
             if label == 0:
-                label = "FADLANN" #mengubah id menjadi sebuah string 
+                label = "your_name" #mengubah id menjadi sebuah string 
             if label == 1:
-                label = "ABAHH"
+                label = "other_name"
             
             label_text = f"{label} {round(100 - kemiripan, 2)}%"
             warna = (0, 255, 0) if kemiripan < 50 else (255, 0, 0) #logika untuk membuat kecocokan , jika < 50 % frame warna hijau
