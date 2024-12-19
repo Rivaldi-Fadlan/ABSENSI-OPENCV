@@ -1,0 +1,5 @@
+opencv-python
+opencv-python-headless
+numpy
+mysql-connector-python
+face-recognition
