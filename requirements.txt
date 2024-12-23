@@ -1,5 +1,5 @@
-opencv-python
-opencv-python-headless
-numpy
-mysql-connector-python
-face-recognition
+pip install opencv-python
+pip install opencv-python-headless
+pip install numpy
+pip install mysql-connector-python
+pip install face-recognition
